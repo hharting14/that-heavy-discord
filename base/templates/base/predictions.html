@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+
+{% block content  %}
+
+<div class="ml-predictions">
+  <div class="ml-results">
+    <p>Based of the data entered, you should go and listen to:</p>
+    <p class="ml-result">{{predicted_band|upper}}</p>
+    <div class="form__action">
+      <a class="btn btn--dark" href="{% url 'home' %}">Go back</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
